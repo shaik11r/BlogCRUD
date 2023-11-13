@@ -14,8 +14,6 @@ blogRouter.delete(
   blogController.deleteBlog
 );
 
-blogRouter.put("/put");
-
 blogRouter.patch(
   "/:id",
   blogValidators.validateUpdateBlog,

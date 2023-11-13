@@ -28,6 +28,7 @@ const createBlog = async (req, res) => {
     });
   }
 };
+
 const deleteBlog = async (req, res) => {
   try {
     console.log(req.params.id);
@@ -42,6 +43,7 @@ const deleteBlog = async (req, res) => {
     res.status(500).send({ error: "Internal Server Error" });
   }
 };
+
 const updateBlog = async (req, res) => {
   try {
     const blogId = req.params.id;
@@ -63,6 +65,7 @@ const updateBlog = async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
 module.exports = {
   getAllBlogs,
   createBlog,
